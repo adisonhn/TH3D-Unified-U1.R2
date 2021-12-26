@@ -431,7 +431,7 @@
 //===========================================================================
 // Creality Ender 5 Options - Select 'Sanguino 1284p' from Tools > Board
 //===========================================================================
-//#define ENDER5
+#define ENDER5
 
 // If you are using our EZOut V1/V2 (connected to LCD header) filament sensor kit please follow the install guide
 // and then uncomment the #define EZOUT_ENABLE line below.
@@ -446,10 +446,10 @@
 //#define TM3DAERO
 //#define TM3DAERO_EXTENDED
 //#define PETSFANG  //This is the RIGHT mounted version - if using the left mount please use the CUSTOM_PROBE option.
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // If you have the new Ender 5 or Ender 5 Pro Model that has the new 800steps/mm Z leadscrew uncomment the below option to set the correct steps/mm
-//#define ENDER5_NEW_LEADSCREW
+#define ENDER5_NEW_LEADSCREW
 
 //=================================================================================================
 // README - THE BELOW SETTINGS ARE ONLY FOR USING THE CR-10S DUAL BOARD WITH THE ENDER 5
@@ -874,7 +874,7 @@
 
 // If you want more or less EZABL probe points change the number below (only used if EZABL enabled)
 // Default is 3 which gives you 3x3 grid for a total of 9 points. STICK WITH ODD NUMBERS
-#define EZABL_POINTS 3
+#define EZABL_POINTS 7
 
 // If you want to change how far in or out the probe senses change EZABL_PROBE_EDGE value below
 // Most Machines - 35
@@ -935,8 +935,8 @@
   *      O-- FRONT --+
   *    (0,0)
   */
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER -44  // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER -16  // Y offset: -front +behind [the nozzle]
 #endif
 
 //===========================================================================
@@ -1023,13 +1023,13 @@
 //#define FAN_FIX
 
 // Use your own printer name
-//#define USER_PRINTER_NAME "CHANGE ME" 
+#define USER_PRINTER_NAME "Ender-5 Pro" 
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
 //#define SLOWER_HOMING
 
 // Using a Creality Silent Board? Enable the below option to set the correct driver setting for those boards
-//#define TMC_CREALITY_BOARD
+#define TMC_CREALITY_BOARD
 
 // BOOT SCREEN OPTIONS -----------------------------
 
@@ -1037,7 +1037,7 @@
 //#define TM3D_BOOT
 
 // Disable Bootscreen completely
-//#define DISABLE_BOOT
+#define DISABLE_BOOT
 
 //===========================================================================
 //*************************** COMMUNITY FEATURES ****************************
@@ -1064,14 +1064,14 @@
 // and then enter your probe offsets in the CUSTOM_PROBE section above. The Pin 27 boards on other ecommerce sites are clones of our original EZOut.
 // If you want to support the people that originally came up with the board you can get our EZOut breakout board here: http://EZOut.TH3DStudio.com
 // Sales from our shop allow us to allocate time for community firmware development at no charge to you. <3
-//#define BLTOUCH
+#define BLTOUCH
 
 // Here is where you set your servo pin. 
 // EZOut Servo Pin Numbers: 
 // Anet(with 2004LCD)/Ender3/5/CR-10 - 27
 // Anet(with 12864LCD)/Ender 2 - 29
 // For 2560 boards look for the pin you connected the servo wire to and enter below (typically 11).
-//#define SERVO0_PIN 27
+#define SERVO0_PIN 27
 
 // The BL Touch is NOT supported on the Wanhao i3 Plus, use the ADVi3++ Firmware instead if you want to use a BL Touch.
 
@@ -1094,8 +1094,8 @@
 // There are 2 new acceleration/jerk controls available in this firmware that can result is better print quality and
 // smoother movement. To try each out just enable them below.
 // Junction Deviation is NOT supported on the Wanhao i3 Plus at this time.
-//#define JUNCTION_DEVIATION_ON
-//#define S_CURVE_ACCELERATION_ON
+#define JUNCTION_DEVIATION_ON
+#define S_CURVE_ACCELERATION_ON
 
 //================================================================================================
 // Language - This is provided for convenience and is unsupported with included product support.
